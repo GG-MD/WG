@@ -182,7 +182,7 @@ public class MemberCommands extends RegionCommandsBase {
         AsyncCommandBuilder.wrap(callable, sender)
                 .registerWithSupervisor(worldGuard.getSupervisor(), description)
                 .sendMessageAfterDelay("(Пожалуйста, подождите...)")
-                .onSuccess(String.format("Из региона '%s' был удален участник.", region.getId()), region.getMembers()::removeAll)
+                .onSuccess(String.format("&dИз региона '%s' был удален участник. \n&7(Если этого не произошло, вам необходимо нажать на ник игрока в /rg info, а затем вместо ника вставить текст который вы скопировали нажав на ник игрока)", region.getId()), region.getMembers()::removeAll)
                 .onFailure("Не удалось удалить участника", worldGuard.getExceptionConverter())
                 .buildAndExec(worldGuard.getExecutorService());
     }
@@ -225,7 +225,7 @@ public class MemberCommands extends RegionCommandsBase {
         AsyncCommandBuilder.wrap(callable, sender)
                 .registerWithSupervisor(worldGuard.getSupervisor(), description)
                 .sendMessageAfterDelay("(Пожалуйста, подождите...)")
-                .onSuccess(String.format("Из региона '%s' был удален владелец.", region.getId()), region.getOwners()::removeAll)
+                .onSuccess(String.format("&dИз региона '%s' был удален владелец. \n&7(Если этого не произошло, вам необходимо нажать на ник игрока в /rg info, а затем вместо ника вставить текст который вы скопировали нажав на ник игрока)", region.getId()), region.getOwners()::removeAll)
                 .onFailure("Не удалось удалить владельцев", worldGuard.getExceptionConverter())
                 .buildAndExec(worldGuard.getExecutorService());
     }
