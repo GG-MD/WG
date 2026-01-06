@@ -947,9 +947,22 @@ public final class Materials {
 
         // 1.21.6
         MATERIAL_FLAGS.put(Material.DRIED_GHAST, 0);
+        putMaterialTag(Tag.ITEMS_HARNESSES, 0);
 
         // 1.21.9
         MATERIAL_FLAGS.put(Material.COPPER_TORCH, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_WALL_TORCH, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_HELMET, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_CHESTPLATE, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_LEGGINGS, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_BOOTS, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_HORSE_ARMOR, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_SWORD, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_PICKAXE, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_AXE, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_SHOVEL, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_HOE, 0);
+        MATERIAL_FLAGS.put(Material.COPPER_NUGGET, 0);
         putMaterialTag(Tag.BARS, 0);
         putMaterialTag(Tag.CHAINS, 0);
         putMaterialTag(Tag.COPPER_CHESTS, MODIFIED_ON_RIGHT);
